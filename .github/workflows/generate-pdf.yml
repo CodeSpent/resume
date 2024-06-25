@@ -14,22 +14,22 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Pandoc
+      - name: Set up Pandoc & LaTeX.
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc texlive texlive-xetex
+          sudo apt-get install -y pandoc texlive texlive-xetex texlive-latex-extra
 
-      - name: Convert index.md to resume.pdf
+      - name: Convert index.md to index.pdf.
         run: |
           if [[ -f "index.md" ]]; then
-            pandoc index.md -o resume.pdf
-            echo "index.md has been converted to resume.pdf"
+            pandoc index.md -o index.pdf --template=templates/ph-simple.tex --pdf-engine=xelatex --from markdown-yaml_metadata_block
+            echo "Successfully converted 'index.md' to 'index.pdf'."
           else
-            echo "index.md does not exist"
+            echo "Couldn't find 'index.md'."
             exit 1
           fi
 
-      - name: Upload resume.pdf as artifact
+      - name: Upload PDF as artifact.
         uses: actions/upload-artifact@v3
         with:
           name: resume-pdf
