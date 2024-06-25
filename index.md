@@ -91,6 +91,6 @@
 
 **Languages**: Python, JavaScript, TypeScript, Go, Elixir \
 **Databases**: Postgres, MongoDB, SQLite \
-**Libraries**: Websockets, Docker, VSCode Extensions SDK, Intellij SDK, Logrus, Zerolog Winston, Discord, Slack \
+**Libraries**: Websockets, Docker, VSCode Extensions SDK, Intellij SDK, Logrus, Zerolog, Winston, Discord, Slack \
 **Cloud**: Amazon Web Services, Google Cloud \
 **Ops & Testing:** Jenkins, Grafana, PyTest, Cypress, Jest, Mocha, Chai \
