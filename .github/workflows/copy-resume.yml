@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Copy resume.md to README.md
+        run: |
+          if [[ -f "resume.md" ]]; then
+            cp resume.md README.md
+            echo "resume.md has been copied to README.md"
+          else
+            echo "resume.md does not exist"
+            exit 1
+          fi
