@@ -9,13 +9,14 @@
 
 ## TECHNICAL SKILLS
 
-**Languages**: JavaScript, TypeScript, Python, C#, HTML, CSS, Go, GraphQL, Elixir, PHP, Kotlin
-**Frameworks**: React, Vue, NextJS, Django, Flask, React Native, Cordova, FastAPI, Entity Framework, Laravel  
-**UI Libraries**: SoftUI, Bootstrap, TailwindCSS, Serenity
-**Databases**: PostgreSQL, SQL Server, MySQL, MongoDB, MemDB  
-**Developer Tools**: Git, Docker, TravisCI, Jenkins, GitHub Actions, Android Studio, Azure DevOps, XCode, Prometheus, Grafana, Jenkins
-**Cloud**: Amazon Web Services, Google Cloud Platform, Azure, Vercel, Netlify  
-**Libraries**: Pandas, NumPy, Matplotlib, TensorFlow, Tesseract OCR, Linq, ChartsJS
+**Languages**: JavaScript, TypeScript, Python, C#, HTML, CSS, Go, GraphQL, Elixir, PHP, Kotlin \
+**Frameworks**: React, Vue, NextJS, Django, Flask, React Native, Cordova, FastAPI, Entity Framework, Laravel \
+**UI Libraries**: SoftUI, Bootstrap, TailwindCSS, Serenity \
+**Databases**: PostgreSQL, SQL Server, MySQL, MongoDB, MemDB \
+**Developer Tools**: Git, Docker, TravisCI, Jenkins, GitHub Actions, Android Studio, Azure DevOps, 
+    XCode, Prometheus, Grafana, Jenkins \
+**Cloud**: Amazon Web Services, Google Cloud Platform, Azure, Vercel, Netlify  \
+**Libraries**: Pandas, NumPy, Matplotlib, TensorFlow, Tesseract OCR, Linq, ChartsJS \
 
 ***
 
@@ -65,11 +66,11 @@
 - Built a series of pipelines for CI/CD, automated testing, data aggregation, etc.
 - Built a CLI tool using Python Fire for orchaestration of services & quick admin tasks. Later refactored this tool to GoLang to respond to environment concerns causing delays.
 
-**Languages**: Python, JavaScript, TypeScript, GraphQL, Go, SQL
-**Databases**: Postgres, MongoDB, SQLite
-**Libraries**: React, Vue, NextJS, TensorFlow, Tesseract OCR, Fire CLI, Redis, Docker  
-**Cloud**: Amazon Web Services, Google Cloud, Vercel, Netlify
-**Ops & Testing:** Jenkins, Grafana, Prometheus, TravisCI, PyTest, Cypress, Selenium, Jest
+**Languages**: Python, JavaScript, TypeScript, GraphQL, Go, SQL \
+**Databases**: Postgres, MongoDB, SQLite \
+**Libraries**: React, Vue, NextJS, TensorFlow, Tesseract OCR, Fire CLI, Redis, Docker  \
+**Cloud**: Amazon Web Services, Google Cloud, Vercel, Netlify \
+**Ops & Testing:** Jenkins, Grafana, Prometheus, TravisCI, PyTest, Cypress, Selenium, Jest \
 
 ### Bias
 
@@ -88,8 +89,8 @@
 - Created a CI/CD pipeline for the distribution of new releases using GitHub Actions.
 - Led beta testing with over 15 developers to drive feature and testing direction.
 
-**Languages**: Python, JavaScript, TypeScript, Go, Elixir
-**Databases**: Postgres, MongoDB, SQLite
-**Libraries**: Websockets, Docker, VSCode Extensions SDK, Intellij SDK, Logrus, Zerolog Winston, Discord, Slack
-**Cloud**: Amazon Web Services, Google Cloud
-**Ops & Testing:** Jenkins, Grafana, PyTest, Cypress, Jest, Mocha, Chai
+**Languages**: Python, JavaScript, TypeScript, Go, Elixir \
+**Databases**: Postgres, MongoDB, SQLite \
+**Libraries**: Websockets, Docker, VSCode Extensions SDK, Intellij SDK, Logrus, Zerolog Winston, Discord, Slack \
+**Cloud**: Amazon Web Services, Google Cloud \
+**Ops & Testing:** Jenkins, Grafana, PyTest, Cypress, Jest, Mocha, Chai \
