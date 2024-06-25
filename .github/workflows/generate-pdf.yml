@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive texlive-xetex
+
+      - name: Convert index.md to resume.pdf
+        run: |
+          if [[ -f "index.md" ]]; then
+            pandoc index.md -o resume.pdf
+            echo "index.md has been converted to resume.pdf"
+          else
+            echo "index.md does not exist"
+            exit 1
+          fi
+
+      - name: Upload resume.pdf as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: resume-pdf
+          path: resume.pdf
