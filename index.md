@@ -5,7 +5,8 @@
 [linkedin.com/in/phanford](https://linkedin.com/in/phanford)  
 [github.com/codespent](https://github.com/codespent)
 
----
+***
+
 ## TECHNICAL SKILLS
 
 **Languages**: JavaScript, TypeScript, Python, C#, HTML, CSS, Go, GraphQL, Elixir, PHP, Kotlin
@@ -16,7 +17,8 @@
 **Cloud**: Amazon Web Services, Google Cloud Platform, Azure, Vercel, Netlify  
 **Libraries**: Pandas, NumPy, Matplotlib, TensorFlow, Tesseract OCR, Linq, ChartsJS
 
----
+***
+
 ## EXPERIENCE
 ### Senior Software Engineer
 **Robert Half International**  
@@ -45,7 +47,7 @@
 - Assumed database administration responsibilities including schema design for Postgres & SQL Server databases hosted on Amazon Web Services (RDS).
 - Implemented Prometheus for resource & app usage metrics presented by Grafana dashboards to aid in scaling appropriately for business needs.
 
----
+***
 
 ## MY PROJECTS
 ### DevStreams
