@@ -14,12 +14,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Pandoc & LaTeX.
+      - name: Set up Pandoc & LaTeX
         run: |
           sudo apt-get update
           sudo apt-get install -y pandoc texlive texlive-xetex texlive-latex-extra
 
-      - name: Convert index.md to index.pdf.
+      - name: Convert index.md to index.pdf
         run: |
           if [[ -f "index.md" ]]; then
             pandoc index.md -o index.pdf --template=templates/ph-simple.tex --pdf-engine=xelatex --from markdown-yaml_metadata_block
