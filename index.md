@@ -1,5 +1,7 @@
 # Patrick Hanford
-# Senior Software Engineer
+# Senior Software Engineer 
+\
+
 
 [hanfordpatrick@gmail.com](mailto:hanfordpatrick@gmail.com)  
 [linkedin.com/in/phanford](https://linkedin.com/in/phanford)  
@@ -10,7 +12,7 @@
 ## TECHNICAL SKILLS
 
 **Languages**: JavaScript, TypeScript, Python, C#, HTML, CSS, Go, GraphQL, Elixir, PHP, Kotlin \
-**Frameworks**: React, Vue, NextJS, Django, Flask, React Native, Cordova, FastAPI, Entity Framework, Laravel \
+**Frameworks**: React, Vue, NextJS, Django, Flask, React Native, Cordova, FastAPI, Entity Framework, Laravel, Angular \
 **UI Libraries**: SoftUI, Bootstrap, TailwindCSS, Serenity \
 **Databases**: PostgreSQL, SQL Server, MySQL, MongoDB, MemDB \
 **Developer Tools**: Git, Docker, TravisCI, Jenkins, GitHub Actions, Android Studio, Azure DevOps, 
@@ -28,7 +30,7 @@
 - Completed work on >15 projects of diverse tech stacks among >8 clients of varying industry.
 - Implemented Docker Swarm for an agency supporting numerous legacy Laravel (PHP) sites.
 - Developed a 3-day Docker & Vagrant centric DevOps training module to improve an existing dev team's development pipeline allowing them to turn around client products faster.
-- Redesigned a Cordova cross-platform mobile application for React Native, managing various app store compliances and distribution pipelines.
+- Redesigned an Angular (Typescript) Cordova cross-platform mobile application for React Native, managing various app store compliances and distribution pipelines.
 - Developed DotNet Core (C#) API for a mobile application using Entity Framework, Linq, and SQL Server.
 - Built series of dashboard views used for manipulating & visualizing outputted data from compared AI models.
 - Developed custom OAuth library for internal SSO & identity management.
