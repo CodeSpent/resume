@@ -22,9 +22,9 @@
 ***
 
 ## EXPERIENCE
-### Senior Full Stack Engineer
-**Ford Motors International**
-*Sep 2024 - Present*
+### Senior Full Stack Engineer \
+**Ford Motors International** \
+*Sep 2024 - Present* \
 
 - Maintained a *RAG* strategy implementation as a series of Flask & FastAPI (Python) APIs.
 - Integrated major internal API analytics product into our LLM product.
