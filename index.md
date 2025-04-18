@@ -22,6 +22,7 @@
 ***
 
 ## EXPERIENCE
+
 ### Senior Full Stack Engineer
 **Ford Motors International**
 *Sep 2024 - Present*
