@@ -1,5 +1,5 @@
 # Patrick Hanford
-# Software Engineer
+# Fullstack Software Engineer
 
 
 [hanfordpatrick@gmail.com](mailto:hanfordpatrick@gmail.com)  
@@ -13,15 +13,28 @@
 **Languages**: JavaScript, TypeScript, Python, C#, HTML, CSS, Go, GraphQL, Elixir, PHP, Kotlin \
 **Frameworks**: React, Vue, NextJS, Django, Flask, React Native, Cordova, FastAPI, Entity Framework, Laravel, Angular \
 **UI Libraries**: SoftUI, Bootstrap, TailwindCSS, Serenity \
-**Databases**: PostgreSQL, SQL Server, MySQL, MongoDB, MemDB \
+**Databases**: PostgreSQL, SQL Server, MySQL, MongoDB, MemDB, DynamoDB, BigQuery \
 **Developer Tools**: Git, Docker, TravisCI, Jenkins, GitHub Actions, Android Studio, Azure DevOps, 
-    XCode, Prometheus, Grafana \
+    XCode, Prometheus, Grafana, GitLab,  \
 **Cloud**: Amazon Web Services, Google Cloud Platform, Azure, Vercel, Netlify  \
 **Libraries**: Pandas, NumPy, Matplotlib, TensorFlow, Tesseract OCR, Linq, ChartsJS
 
 ***
 
 ## EXPERIENCE
+### Senior Full Stack Engineer
+**Ford Motors International**
+*Sep 2024 - Present*
+
+- Maintained a *RAG* strategy implementation as a series of Flask & FastAPI (Python) APIs.
+- Integrated major internal API analytics product into our LLM product.
+- Worked with data engineers to integrate new data sources across the company domain into our LLM product.
+- Maintained Angular UI for making queries, requesting summarized data, & engaging in conversation with the LLM product.
+- Added dynamic functionality to common UI components to support more advanced use cases such as dynamic options loading, virtual scroll, emitters, etc.
+- Implemented a plethora of DX (dev experience) standards & policies to aid in the productivity of our teams & streamlining of feature development with less regression, conflicts, & direct collaboration/pairing necessity enabling more autonomous engineering.
+- Worked with international engineering teams in Mexico to implement features that benefit industry staff in their facilities.
+- Helped implement 2 major projects into our LLM product; Massively increasing adoption rate.
+
 ### Senior Software Engineer
 **Robert Half International**  
 *Feb 2020 - Mar 2024*
