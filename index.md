@@ -2,10 +2,10 @@
 # Fullstack Software Engineer
 
 
-[patrick@phanford.dev](mailto:patrick@phanford.dev)  
-[linkedin.com/in/phanford](https://linkedin.com/in/phanford)  
-[github.com/codespent](https://github.com/codespent)
-[https://phanford.dev](phanford.dev)
+[patrick@phanford.dev](mailto:patrick@phanford.dev)  \
+[linkedin.com/in/phanford](https://linkedin.com/in/phanford)  \
+[github.com/codespent](https://github.com/codespent) \
+[https://phanford.dev](phanford.dev) \
 
 ***
 
