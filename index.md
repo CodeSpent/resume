@@ -2,10 +2,10 @@
 # Fullstack Software Engineer
 
 
-[hanfordpatrick@gmail.com](mailto:hanfordpatrick@gmail.com)  
+[patrick@phanford.dev](mailto:patrick@phanford.dev)  
 [linkedin.com/in/phanford](https://linkedin.com/in/phanford)  
 [github.com/codespent](https://github.com/codespent)
-
+https://phanford.dev
 ***
 
 ## TECHNICAL SKILLS
