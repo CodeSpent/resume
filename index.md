@@ -5,7 +5,8 @@
 [patrick@phanford.dev](mailto:patrick@phanford.dev)  
 [linkedin.com/in/phanford](https://linkedin.com/in/phanford)  
 [github.com/codespent](https://github.com/codespent)
-https://phanford.dev
+[https://phanford.dev](phanford.dev)
+
 ***
 
 ## TECHNICAL SKILLS
