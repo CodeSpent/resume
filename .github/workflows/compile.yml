@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install TeX Live
+      - name: Install dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y \
@@ -31,33 +31,44 @@ jobs:
             texlive-fonts-recommended \
             texlive-fonts-extra \
             texlive-latex-extra \
-            fonts-noto
+            fonts-noto \
+            pandoc
 
       - name: Compile PDF
         run: xelatex -interaction=nonstopmode -halt-on-error resume.tex
 
-      - name: Generate README
+      - name: Generate Markdown
         run: node scripts/generate-readme.js
 
-      - name: Commit README
+      - name: Generate DOCX
+        run: pandoc resume.md -o resume.docx --from=markdown --to=docx
+
+      - name: Update README
+        run: cp resume.md README.md
+
+      - name: Commit generated files
         if: github.event_name == 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md
-          git diff --staged --quiet || git commit -m "docs: update README from resume.tex"
+          git add resume.md README.md
+          git diff --staged --quiet || git commit -m "docs: regenerate resume formats"
           git push
 
-      - name: Upload artifact
+      - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
           name: resume
           path: |
             resume.pdf
-            README.md
+            resume.md
+            resume.docx
 
       - name: Attach to release
         if: github.event_name == 'release'
         uses: softprops/action-gh-release@v2
         with:
-          files: resume.pdf
+          files: |
+            resume.pdf
+            resume.md
+            resume.docx

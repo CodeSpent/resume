@@ -9,7 +9,7 @@ const fs = require('fs');
 const path = require('path');
 
 const texPath = path.join(__dirname, '..', 'resume.tex');
-const readmePath = path.join(__dirname, '..', 'README.md');
+const mdPath = path.join(__dirname, '..', 'resume.md');
 
 const tex = fs.readFileSync(texPath, 'utf-8');
 
@@ -170,11 +170,11 @@ const generateMarkdown = () => {
 
   // Add footer
   md += '---\n\n';
-  md += '*This README is auto-generated from [resume.tex](resume.tex). Download the [PDF version](https://github.com/CodeSpent/resume/releases/latest/download/resume.pdf).*\n';
+  md += '*Auto-generated from [resume.tex](resume.tex). Download: [PDF](https://github.com/CodeSpent/resume/releases/latest/download/resume.pdf) | [Word](https://github.com/CodeSpent/resume/releases/latest/download/resume.docx) | [Markdown](https://github.com/CodeSpent/resume/releases/latest/download/resume.md)*\n';
 
   return md;
 };
 
 const markdown = generateMarkdown();
-fs.writeFileSync(readmePath, markdown);
-console.log('Generated README.md');
+fs.writeFileSync(mdPath, markdown);
+console.log('Generated resume.md');
