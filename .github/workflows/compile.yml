@@ -72,3 +72,11 @@ jobs:
             resume.pdf
             resume.md
             resume.docx
+
+      - name: Trigger phanford.dev rebuild
+        if: github.event_name == 'push'
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PHANFORD_DEV_PAT }}
+          repository: CodeSpent/phanford.dev
+          event-type: content-updated
