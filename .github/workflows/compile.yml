@@ -75,6 +75,7 @@ jobs:
 
       - name: Trigger content repo update
         if: github.event_name == 'push'
+        continue-on-error: true
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.CONTENT_PAT }}
