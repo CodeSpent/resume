@@ -45,6 +45,3 @@
 - Reduced OpenAI API costs by 46% through semantic caching, prompt compression, and intelligent context windowing without degrading output quality.
 - Deployed infrastructure via CloudFormation with self-hosted Docker option for enterprise clients requiring on-premise data residency.
 
----
-
-*Auto-generated from [resume.tex](resume.tex). Download: [PDF](https://github.com/CodeSpent/resume/releases/latest/download/resume.pdf) | [Word](https://github.com/CodeSpent/resume/releases/latest/download/resume.docx) | [Markdown](https://github.com/CodeSpent/resume/releases/latest/download/resume.md)*
