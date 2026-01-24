@@ -47,4 +47,4 @@
 
 ---
 
-*This README is auto-generated from [resume.tex](resume.tex). Download the [PDF version](https://github.com/CodeSpent/resume/releases/latest/download/resume.pdf).*
+*Auto-generated from [resume.tex](resume.tex). Download: [PDF](https://github.com/CodeSpent/resume/releases/latest/download/resume.pdf) | [Word](https://github.com/CodeSpent/resume/releases/latest/download/resume.docx) | [Markdown](https://github.com/CodeSpent/resume/releases/latest/download/resume.md)*
