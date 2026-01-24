@@ -9,7 +9,7 @@ const fs = require('fs');
 const path = require('path');
 
 const texPath = path.join(__dirname, '..', 'resume.tex');
-const mdPath = path.join(__dirname, '..', 'resume.md');
+const mdPath = path.join(__dirname, '..', 'Patrick-Hanford-Resume.md');
 
 const tex = fs.readFileSync(texPath, 'utf-8');
 

@@ -35,23 +35,25 @@ jobs:
             pandoc
 
       - name: Compile PDF
-        run: xelatex -interaction=nonstopmode -halt-on-error resume.tex
+        run: |
+          xelatex -interaction=nonstopmode -halt-on-error resume.tex
+          mv resume.pdf Patrick-Hanford-Resume.pdf
 
       - name: Generate Markdown
         run: node scripts/generate-readme.js
 
       - name: Generate DOCX
-        run: pandoc resume.md -o resume.docx --from=markdown --to=docx
+        run: pandoc Patrick-Hanford-Resume.md -o Patrick-Hanford-Resume.docx --from=markdown --to=docx
 
       - name: Update README
-        run: cp resume.md README.md
+        run: cp Patrick-Hanford-Resume.md README.md
 
       - name: Commit generated files
         if: github.event_name == 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add resume.md README.md
+          git add Patrick-Hanford-Resume.md README.md
           git diff --staged --quiet || git commit -m "docs: regenerate resume formats"
           git push
 
@@ -60,18 +62,18 @@ jobs:
         with:
           name: resume
           path: |
-            resume.pdf
-            resume.md
-            resume.docx
+            Patrick-Hanford-Resume.pdf
+            Patrick-Hanford-Resume.md
+            Patrick-Hanford-Resume.docx
 
       - name: Attach to release
         if: github.event_name == 'release'
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            resume.pdf
-            resume.md
-            resume.docx
+            Patrick-Hanford-Resume.pdf
+            Patrick-Hanford-Resume.md
+            Patrick-Hanford-Resume.docx
 
       - name: Trigger content repo update
         if: github.event_name == 'push'
