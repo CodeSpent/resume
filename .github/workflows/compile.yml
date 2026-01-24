@@ -18,6 +18,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
       - name: Install TeX Live
         run: |
           sudo apt-get update
@@ -31,11 +36,25 @@ jobs:
       - name: Compile PDF
         run: xelatex -interaction=nonstopmode -halt-on-error resume.tex
 
+      - name: Generate README
+        run: node scripts/generate-readme.js
+
+      - name: Commit README
+        if: github.event_name == 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --staged --quiet || git commit -m "docs: update README from resume.tex"
+          git push
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: resume
-          path: resume.pdf
+          path: |
+            resume.pdf
+            README.md
 
       - name: Attach to release
         if: github.event_name == 'release'
