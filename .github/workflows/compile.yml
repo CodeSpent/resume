@@ -78,6 +78,6 @@ jobs:
         continue-on-error: true
         uses: peter-evans/repository-dispatch@v3
         with:
-          token: ${{ secrets.CONTENT_PAT }}
+          token: ${{ secrets.PHANFORD_DEV_PAT }}
           repository: CodeSpent/content
           event-type: submodule-updated
