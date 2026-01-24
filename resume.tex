@@ -1,0 +1,114 @@
+\documentclass{doc}
+
+\setname{Patrick Hanford}{}
+\setmobile{}
+\setmail{patrick@phanford.dev}
+\setlinkedinaccount{https://linkedin.com/in/phanford}
+\setgithubaccount{https://github.com/codespent}
+\setwebsite{https://phanford.dev}
+\setthemecolor{MidnightBlue}
+
+
+\begin{document}
+
+%Create header
+    \headerview
+    \vspace{1ex} % white space
+%
+    \section{Skills}
+    \newcommand{\skillone}{\createskill{Languages}{JavaScript \cpshalf TypeScript \cpshalf Python \cpshalf C\# \cpshalf Go \cpshalf Elixir \cpshalf Kotlin}}
+    %
+    \newcommand{\skilltwo}{\createskill{Frontend}{React \cpshalf Vue \cpshalf NextJS \cpshalf React Native \cpshalf TailwindCSS}}
+    %
+    \newcommand{\skillthree}{\createskill{Backend}{Django \cpshalf Flask \cpshalf FastAPI \cpshalf Entity Framework \cpshalf GraphQL}}
+    %
+    \newcommand{\skillfour}{\createskill{Cloud/DevOps}{AWS \cpshalf GCP \cpshalf Azure \cpshalf Docker \cpshalf GitHub Actions}}
+    %
+    \createskills{\skillone, \skilltwo, \skillthree, \skillfour}
+    \vspace{-3mm} % reduces whitespace!
+    %
+%
+    \section{Experience}
+    %
+    \datedexperience{Ford Motors International}{Sep 2024 - Nov 2025}
+    \explanation{Fullstack Software Engineer}{}
+    \explanationdetail{
+        \smallskip
+        \coloredbullet\ %
+        Built Text2SQL service from scratch, enabling natural language database queries and opening a new enterprise customer segment for the generative AI platform.
+
+        \smallskip
+        \coloredbullet\ %
+        Optimized RAG pipeline APIs (Flask/FastAPI), reducing response latency by 90\% (1m14s → 7.2s) while scaling to handle 3x payload volume.
+
+        \smallskip
+        \coloredbullet\ %
+        Built dynamic data visualization layer using Chart.js, transforming static table outputs into interactive charts from LLM responses.
+
+        \smallskip
+        \coloredbullet\ %
+        Designed async component library with virtual scroll and incremental loading, adopted as standard across 12+ micro-frontend applications.
+
+        \smallskip
+        \coloredbullet\ %
+        Led production deployment of data aggregation tool replacing a legacy system, reducing manual reporting time by 60\% for finance teams.
+
+        \smallskip
+        \coloredbullet\ %
+        Established code review standards and CI/CD guardrails, decreasing production incidents by 40\% over 6 months.
+
+        \bigskip
+    }
+    %
+    \datedexperience{Robert Half International}{Feb 2020 - Mar 2024}
+    \explanation{Fullstack Software Engineer}{}
+    \explanationdetail{
+        \smallskip
+        \coloredbullet\ %
+        Migrated Angular Cordova mobile app to React Native, reducing build times by 70\% and achieving 99.5\% crash-free sessions across iOS and Android.
+
+        \smallskip
+        \coloredbullet\ %
+        Architected multi-database sync system (SQL Server, Postgres, MySQL) using Serenity framework, consolidating data from 8 legacy sources into unified reporting.
+
+        \smallskip
+        \coloredbullet\ %
+        Containerized 15+ legacy Laravel sites with Docker Swarm, cutting deployment time from hours to minutes and eliminating environment drift issues.
+
+        \smallskip
+        \coloredbullet\ %
+        Built real-time video conferencing platform (Django/NextJS) supporting 500+ concurrent users with WebRTC and Redis pub/sub.
+
+        \smallskip
+        \coloredbullet\ %
+        Unified CI/CD infrastructure across Azure DevOps, GitHub Actions, and Jenkins, reducing pipeline maintenance overhead by 50\%.
+
+        \bigskip
+    }
+%
+    \section{Notable Projects}
+    %
+    \datedexperience{TakePoint (takepoint.dev)}{}
+    \explanation{AI-Enhanced Sprint Planning Platform}{}
+    \explanationdetail{
+        \smallskip
+        \coloredbullet\ %
+        Built AI-powered sprint planning tool using RAG with OpenAI, generating actionable story breakdowns and retrospective insights in real-time.
+
+        \smallskip
+        \coloredbullet\ %
+        Engineered bi-directional Jira sync, enabling teams to import backlogs, refine stories with AI assistance, and push changes back without context switching.
+
+        \smallskip
+        \coloredbullet\ %
+        Reduced OpenAI API costs by 46\% through semantic caching, prompt compression, and intelligent context windowing without degrading output quality.
+
+        \smallskip
+        \coloredbullet\ %
+        Deployed infrastructure via CloudFormation with self-hosted Docker option for enterprise clients requiring on-premise data residency.
+
+        \smallskip
+        \textit{Python, TypeScript, PostgreSQL, MongoDB, CloudFormation, OpenAI, Jira, AWS, Docker}
+
+    }
+\end{document}
