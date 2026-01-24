@@ -168,10 +168,6 @@ const generateMarkdown = () => {
     }
   }
 
-  // Add footer
-  md += '---\n\n';
-  md += '*Auto-generated from [resume.tex](resume.tex). Download: [PDF](https://github.com/CodeSpent/resume/releases/latest/download/resume.pdf) | [Word](https://github.com/CodeSpent/resume/releases/latest/download/resume.docx) | [Markdown](https://github.com/CodeSpent/resume/releases/latest/download/resume.md)*\n';
-
   return md;
 };
 
