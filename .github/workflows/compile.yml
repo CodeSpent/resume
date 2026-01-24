@@ -1,0 +1,41 @@
+name: Compile Resume
+
+on:
+  push:
+    branches: [main]
+  release:
+    types: [published]
+  workflow_dispatch:
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install TeX Live
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            texlive-xetex \
+            texlive-fonts-recommended \
+            texlive-fonts-extra \
+            texlive-latex-extra \
+            fonts-noto
+
+      - name: Compile PDF
+        run: xelatex -interaction=nonstopmode -halt-on-error resume.tex
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume
+          path: resume.pdf
+
+      - name: Attach to release
+        if: github.event_name == 'release'
+        uses: softprops/action-gh-release@v2
+        with:
+          files: resume.pdf
