@@ -52,7 +52,7 @@
 
 \newcommand{\linkedinview}{\href{\@linkedinaccount}{\faLinkedinSquare\ \footnotesize linkedin}}
 \newcommand{\githubview}{\href{\@githubaccount}{\faGithubSquare\ \footnotesize github}}
-\newcommand{\websiteview}{\href{\@websiteurl}{\faLink\ \footnotesize website}}
+\newcommand{\websiteview}{\href{\@websiteurl}{\faLink\ \footnotesize portfolio}}
 
 \newcommand{\name}{%
         {\LARGE \color{\@themecolor} \@firstname \ \textsc{\@lastname}}
