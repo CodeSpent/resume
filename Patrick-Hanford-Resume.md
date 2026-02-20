@@ -10,7 +10,7 @@
 
 **Frontend:** React, Vue, NextJS, React Native, TailwindCSS
 
-**Backend:** Django, Flask, FastAPI, Entity Framework, Phoenix, GraphQL
+**Backend:** Django, Flask, FastAPI, DotNet, Entity Framework, Phoenix, GraphQL
 
 **Cloud/DevOps:** AWS, GCP, Azure, Docker, GitHub Actions
 
